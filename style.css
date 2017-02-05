@@ -22,6 +22,32 @@ a:hover {
     text-decoration: none;
 }
 
+.btn-outline {
+  background: transparent;
+  border: 1px solid #999;
+  border-radius: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.btn-outline-white {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.btn-outline-white:hover {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
 
 /* Header section */
 
@@ -35,12 +61,23 @@ header {
 }
 
 header h1 {
-    font-size: 54px;
+    font-size: 90px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 0 0 1px #666;
+    margin-bottom: 0;
+}
+
+header h2 {
+    font-size: 39px;
     font-weight: 300;
     color: #fff;
     text-align: center;
     letter-spacing: -1px;
     text-shadow: 0 0 1px #666;
+    margin-top: 0;
 }
 
 header p {
@@ -51,9 +88,8 @@ header p {
     text-shadow: 0 0 1px #666;
 }
 
-.header-section img {
-    margin: 0 auto;
-    display: block;
+.header-section {
+    padding-top: 50px;
 }
 
 
@@ -128,7 +164,12 @@ section {
     padding-bottom: 35px;
 }
 
-.section-header h1 {
+.section-header-no-padding {
+    padding-bottom: 0px;
+}
+
+.section-header h1,
+.section-header-no-padding h1 {
     text-transform: uppercase;
     letter-spacing: -1px;
     margin-bottom: 0;
@@ -143,17 +184,125 @@ section {
     margin-top: 0;
 }
 
-.me-and-him p {
-    padding: 5px 20px 0 0;
+.me-and-him {
+  padding-top: 60px;
 }
 
-.me-and-him p::first-letter {
-    font-size: 200%;
-    line-height: 20px;
+.me-and-him i {
+  font-size: 40px;
+  padding-bottom: 5px;
+}
+
+.me-and-him p {
+    padding: 0 20px 0 0;
 }
 
 .fa-linkedin {
     color: #0077B5;
+}
+
+/* Process */
+
+.process-inner {
+    width: 100%;
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.process-inner .icon-holder {
+    position: relative;
+    top: 70px;
+    display: inline-block;
+    padding: 10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.process-inner .heading {
+    position: relative;
+    top: 60px;
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.process-inner .icon-holder > img.icon {
+    width: 40px;
+}
+
+.process-inner:hover {
+    border-color: #d96051;
+}
+
+.process-inner:hover .icon-holder {
+    top: 30px;
+}
+
+.process-inner:hover .heading {
+    top: 0px;
+}
+
+.process-inner .description {
+    width: 80%;
+    margin: 0 auto;
+    opacity: 0;
+    padding-bottom: 40px;
+    line-height: 20px;
+    font-weight: 200;
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.process-inner:hover .description {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.process-inner .btn {
+    opacity: 0;
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    margin-top: -20px;
+}
+
+.process-inner a {
+  color: #333;
+}
+
+.process-inner a:hover {
+  background-color: rgba(51,51,51,.05);
+}
+
+.process-inner:hover .btn {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.process {
+    /*background-color: #f6f6f6;*/
+    padding-bottom: 25px;
+}
+
+.process-inner i {
+    font-size: 40px;
+    margin-bottom: 35px;
+    color:#333;
+}
+
+.process-inner h3 {
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 
@@ -449,6 +598,8 @@ section.subscribe {
     text-align: center;
     position: relative;
     font-size: 22px;
+    font-weight: 300;
+    letter-spacing: -1px;
     background-color: transparent;
     color: #FFF;
     padding: 1em 0;
@@ -460,25 +611,7 @@ section.subscribe {
     transform: translate3d(0, -100%, 0);
 }
 
-.hovereffect a, .hovereffect p {
-    color: #FFF;
-    text-decoration: none;
-    padding: 1em 0;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-}
 
-.hovereffect a {
-  background-color: #d96051;
-  padding: 0.5em 0.65em;
-  border-radius: 2px;
-  border: 1px solid #d75140;
-  font-size: 14px;
-}
 
 .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
     opacity: 1;
@@ -490,11 +623,6 @@ section.subscribe {
 p.me-text {
   text-align: left;
   padding-top: 50px;
-}
-
-p.me-text::first-letter {
-    font-size: 200%;
-    line-height: 20px;
 }
 
 .code h4 > a {
