@@ -62,6 +62,10 @@ a:hover {
     border-radius: 1px;
     font-weight: 300;
     text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-outline-white:hover {
@@ -73,6 +77,10 @@ a:hover {
     text-transform: uppercase;
 }
 
+.nav-button {
+  margin-top: 9px;
+}
+
 
 /* Header section */
 
@@ -81,8 +89,11 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 400px;
     padding: 100px 0 70px;
+}
+
+header.inner-page {
+  padding: 75px 0 50px;
 }
 
 header h1 {
@@ -115,6 +126,10 @@ header p {
 
 .header-section {
     padding-top: 50px;
+}
+
+.header-section .btn {
+  margin-top: 25px;
 }
 
 
