@@ -98,7 +98,13 @@ header {
 }
 
 header.inner-page {
-    padding: 75px 0 50px;
+    padding: 0;
+    height: auto;
+}
+
+header.inner-page h1 {
+  font-size: 70px !important;
+  font-weight: 300;
 }
 
 header h1 {
@@ -233,12 +239,16 @@ section {
     padding-top: 60px;
 }
 
-.me-and-him i {
+.me-and-him-lower {
+  padding-top: 0;
+}
+
+.me-and-him i,.me-and-him-lower i {
     font-size: 40px;
     padding-bottom: 5px;
 }
 
-.me-and-him p {
+.me-and-him p, .me-and-him-lower p {
     padding: 0 20px 0 0;
 }
 
@@ -1081,4 +1091,9 @@ p.footnote {
     font-size: 13px !important;
     padding-top: 25px !important;
     margin-bottom: 15px !important;
+}
+
+/* Things page */
+.music img {
+  padding: 20px;
 }
