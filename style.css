@@ -1125,3 +1125,14 @@ p.footnote {
 .code-snippets img {
   margin: 0 auto;
 }
+
+/* carousel */
+.carousel {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none !important;
+}
