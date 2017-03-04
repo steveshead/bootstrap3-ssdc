@@ -7,6 +7,9 @@ $('nav a').on('click',function () {
   return false;
 });
 
+<<<<<<< HEAD
+// Smooth Scroll for jumbotron button
+
 $('a.nav').on('click',function () {
   var $href = $(this).attr('href');
   $('body').on(stop).animate({
@@ -15,6 +18,8 @@ $('a.nav').on('click',function () {
   return false;
 });
 
+=======
+>>>>>>> origin/master
 // back to top
 $('#toTop a').on('click',function () {
   $('body').animate({
