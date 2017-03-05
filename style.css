@@ -363,9 +363,11 @@ img.montage:hover {
     color: #333;
 }
 
+/*
 .process-inner a:hover {
     background-color: rgba(51, 51, 51, .05);
 }
+*/
 
 .process-inner:hover .btn {
     opacity: 1;
