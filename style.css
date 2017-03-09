@@ -244,6 +244,11 @@ section {
     font-weight: 300;
 }
 
+.title p {
+  width: 85%;
+  margin: 0 auto;
+}
+
 
 /* About section */
 
@@ -646,6 +651,30 @@ section.inspiration {
 .fa-quote-left {
     padding-right: 7px;
     font-size: 20px !important;
+}
+
+/* T-Shirts */
+.tshirts img {
+  margin: 0 auto;
+    padding: 8px;
+    border: 1px solid #eee !important;
+    margin-bottom: 25px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+
+
+.tshirt-panel {
+  padding: 20px;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.tshirt-panel:hover {
+  background-color: #f9f7f7;
 }
 
 
@@ -1080,7 +1109,7 @@ section#contact {
     width: 40px;
     height: 40px;
     color: #000;
-    border-radius: 0;
+    border-radius: 2px;
     background: rgba(255, 255, 255, .9);
     -webkit-transition: all .3s ease 0s;
     -moz-transition: all .3s ease 0s;
