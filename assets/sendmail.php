@@ -17,7 +17,7 @@ if($_POST) {
     $clientEmail = trim($_POST['email']);
     $message = trim($_POST['message']);
 
-    $subject = "New message from your site";
+    $subject = "New message from Steve Shead Dot Com";
 
     $array = array('nameMessage' => '', 'emailMessage' => '', 'messageMessage' => '',);
 

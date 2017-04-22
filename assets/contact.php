@@ -9,7 +9,7 @@ $emailTo = "steve@steve-shead.com";
 
 
 // ENTER IDENTIFIER
-$emailIdentifier =  "Message sent via contact form from " . $_SERVER["SERVER_NAME"];
+$emailIdentifier =  "Message sent via contact form from Steve Shead Dot Com" . $_SERVER["SERVER_NAME"];
 
 
 

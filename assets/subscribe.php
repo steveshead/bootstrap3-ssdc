@@ -34,7 +34,7 @@ if($_POST) {
 
     // Send email
 	$subject = 'New Subscriber';
-	$body = "You have a new subscriber form your Page!\n\nEmail: " . $subscriber_email;
+	$body = "You have a new subscriber from Steve Shead Dot Com!\n\nEmail: " . $subscriber_email;
 	
 	$headers = "From: ".$subscriber_email." <" . $subscriber_email . ">" . "\r\n" . "Reply-To: " . $subscriber_email;
 	mail($emailTo, $subject, $body, $headers);
