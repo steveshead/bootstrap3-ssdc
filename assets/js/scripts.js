@@ -1,34 +1,3 @@
-/** AJAX - SUBSCRIBE
- *****************************************************/
-$(document).ready( function(){
-
-	$('.subscribe-form').submit(function() {
-
-		  var postdata = $('.subscribe-form').serialize();
-		  $.ajax({
-			  type: 'POST',
-			  url: 'assets/subscribe.php',
-			  data: postdata,
-			  dataType: 'json',
-			  success: function(json) {
-				  if(json.valid === 0) {
-
-					  $('.subscribe-form').addClass("error");
-					  $('.subscribe-form input').attr("placeholder", json.error);
-				  }
-				  else {
-
-					  $('.subscribe-form input,.subscribe-form button').val('').prop('disabled', true);
-					  $('.subscribe-form input').attr("placeholder",json.message);
-					  $('.subscribe-form').removeClass("error").addClass("success");
-				  }
-			  }
-			});
-			return false;
-		});
-
-});
-
 /**	 AJAX - CONTACT
  *****************************************************/
  $(document).ready( function(){
